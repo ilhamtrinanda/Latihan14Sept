@@ -33,6 +33,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btnGaleri.setOnClickListener() {
+            intent = Intent(this@MainActivity, RecyclePnpActivity::class.java)
+            startActivity(intent)
+        }
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
